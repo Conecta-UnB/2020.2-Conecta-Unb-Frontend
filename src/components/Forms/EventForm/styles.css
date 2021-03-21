@@ -1,0 +1,60 @@
+.containerEventsForms {
+  width: 90%;
+}
+
+.containerEventsForms .eventsContent{
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+}
+
+.containerEventsForms form{
+  flex-direction: column;
+  display: flex;
+}
+
+.containerEventsForms #title{
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 24px;
+  border-color: #018B44;
+  color: #018B44;
+  margin-top: 3%;
+  padding: 1%;
+  align-self: center;
+}
+
+.containerEventsForms .eventsInputs input{
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 24px;
+  border-color: #018B44;
+  color: #018B44;
+  margin-top: 8%;
+  padding: 1%;
+  margin-left: 5%;
+}
+
+.containerEventsForms textarea{
+  resize: none;
+  padding: 1%;
+  margin-top: 3%;
+  width: 50%;
+  height: 250px;
+  border-radius: 15px;
+  font-size: 15px;
+  border-color: #018B44;
+  color: #018B44;
+}
+
+.containerEventsForms button{
+  margin-top: 3%;
+  padding: 1%;
+  background: #018B44;
+  border: none;
+  color: #ffff;
+  width: 25%;
+  align-self: center;
+}

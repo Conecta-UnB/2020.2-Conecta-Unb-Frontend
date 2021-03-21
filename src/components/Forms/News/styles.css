@@ -1,0 +1,42 @@
+.containerNewsForm {
+  width: 90%;
+}
+
+.containerNewsForm form{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerNewsForm input{
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 24px;
+  border-color: #018B44;
+  color: #018B44;
+  margin-top: 3%;
+  padding: 1%;
+}
+
+.containerNewsForm textarea{
+  resize: none;
+  padding: 1%;
+  margin-top: 3%;
+  width: 90%;
+  height: 350px;
+  border-radius: 15px;
+  font-size: 15px;
+  border-color: #018B44;
+  color: #018B44;
+}
+
+.containerNewsForm button{
+  margin-top: 3%;
+  padding: 1%;
+  background: #018B44;
+  border: none;
+  color: #ffff;
+  width: 25%;
+}
