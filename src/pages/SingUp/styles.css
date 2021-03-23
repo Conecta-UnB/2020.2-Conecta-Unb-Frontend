@@ -1,0 +1,19 @@
+.underHeader div{
+  display: flex;
+  flex-direction: column;
+}
+
+.underHeader #formSignUp{
+  display: flex;
+  flex-direction: row;
+}
+
+.underHeader img{
+  width: 120%;
+}
+
+.underHeader text{
+  color: #018B44;
+  font-weight: bold;
+  font-size: 50px;
+}
