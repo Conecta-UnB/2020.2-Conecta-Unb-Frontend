@@ -1,10 +1,10 @@
 import React from 'react';
-import ForumForms from '../../components/Forms/Forum';
+import SignUpForm from '../../components/Forms/SignUp';
 
 export default function Home() {
   return (
     <div>
-      <ForumForms />
+      <SignUpForm />
     </div>
   );
 }
