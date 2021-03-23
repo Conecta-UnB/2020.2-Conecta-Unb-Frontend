@@ -11,17 +11,13 @@ export default function LoginForm() {
         <img src={logo} alt="logoImage" />
         <form>
           <label>
-            email
+            E-mail:
           </label>
-          <br />
           <input type="email" autoComplete="off" />
-          <br />
           <label>
-            senha
+            Senha:
           </label>
-          <br />
           <input type="password" autoComplete="off" />
-          <br />
           <button type="submit">
             Entrar
           </button>

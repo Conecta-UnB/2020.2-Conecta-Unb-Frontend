@@ -1,18 +1,19 @@
 .containerLoginForm{
   background-color: #0D8447;
-  width: 350px;
-  height: 380px;
+  width: 30%;
+  height: 40%;
   border-radius: 20px;
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .containerLoginForm img{
-  display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
+  margin-bottom: 10%;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
 }
 
 .containerLoginForm div{
@@ -24,25 +25,27 @@
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
-  height: 40px;
+  height: 5%;
   border-radius: 20px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  padding: 5%;
 }
+
 .containerLoginForm label{
   font-size: 20px;
   margin-left: 5%;
   color: #ffff;
   font-weight: bold;
-}
-
-.containerLoginForm br{
-  margin-top: 8%;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 .containerLoginForm button{
   background: #0260EE;
   align-self: center;
   display: block;
-  margin-top: 5%;
+  margin-top: 2%;
   margin-left: auto;
   margin-right: auto;
   width: 30%;
