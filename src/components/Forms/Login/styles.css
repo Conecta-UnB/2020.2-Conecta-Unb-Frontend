@@ -1,54 +1,58 @@
 .containerLoginForm{
   background-color: #0D8447;
-  width: 30%;
-  height: 40%;
+  width: 400px;
+  height: 450px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
-.containerLoginForm img{
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10%;
-  width: 50%;
-  height: 50%;
+.imgContainer{
+  display: flex;
+  width: 200px;
+  padding-right: 8%;
+  height: 200px;
+  justify-content: center;
+}
+
+.imgContainer img {
   border-radius: 50%;
 }
 
 .containerLoginForm div{
   align-self: center;
-  padding-top: 5%;
+  padding-top: 20px;
 }
 
 .containerLoginForm input{
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-  height: 5%;
+  width: 350px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 20px;
   border-radius: 20px;
-  margin-top: 2%;
-  margin-bottom: 5%;
-  padding: 5%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
 .containerLoginForm label{
   font-size: 20px;
-  margin-left: 5%;
+  margin-left: 20px;
   color: #ffff;
   font-weight: bold;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  padding-top: 60px;
+  margin-bottom: 40px;
 }
 
 .containerLoginForm button{
   background: #0260EE;
   align-self: center;
   display: block;
-  margin-top: 2%;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
+  width: 60px;
   height: 30px;
   border-radius: 8px;
   border: none;

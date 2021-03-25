@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '../../components/Header';
 import SignUpForm from '../../components/Forms/SignUp';
 import signUp from '../../assets/signUp.svg';
 import './styles.css';
@@ -7,7 +6,6 @@ import './styles.css';
 export default function SignUpPage() {
   return (
     <div>
-      <Header />
       <div className="underHeader">
         <text>
           Cadastro
