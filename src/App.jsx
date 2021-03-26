@@ -1,11 +1,14 @@
 import React from 'react';
 import './global.css';
 import Routes from './routes';
+import UserProvider from './contexts/user';
 
 function App() {
   return (
     <div className="App">
-      <Routes />
+      <UserProvider>
+        <Routes />
+      </UserProvider>
     </div>
   );
 }
