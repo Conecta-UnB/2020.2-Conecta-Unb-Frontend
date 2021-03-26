@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testando loginforms deve ser igual a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="containerSignUpForm"
+  >
+    <form>
+      <input
+        autocomplete="off"
+        placeholder="Nome completo"
+        type="text"
+      />
+      <input
+        autocomplete="off"
+        placeholder="Matrícula"
+        type="text"
+      />
+      <input
+        autocomplete="off"
+        placeholder="E-mail"
+        type="email"
+      />
+      <input
+        autocomplete="off"
+        placeholder="Senha"
+        type="password"
+      />
+      <input
+        autocomplete="off"
+        placeholder="Telefone"
+        type="text"
+      />
+      <button
+        type="submit"
+      >
+        Cadastre-se
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;

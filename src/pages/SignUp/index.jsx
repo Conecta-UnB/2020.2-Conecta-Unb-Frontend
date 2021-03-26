@@ -7,9 +7,9 @@ export default function SignUpPage() {
   return (
     <div>
       <div className="underHeader">
-        <text>
+        <h1>
           Cadastro
-        </text>
+        </h1>
         <div id="formSignUp">
           <SignUpForm />
           <img src={signUp} alt="signUpImage" />
