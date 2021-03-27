@@ -15,31 +15,30 @@ exports[`testando loginforms deve ser igual a snapshot 1`] = `
         <div
           class="containerSignUpForm"
         >
-          <form>
+          <form
+            action="#"
+          >
             <input
-              autocomplete="off"
-              placeholder="Nome completo"
-              type="text"
+              name="nome"
+              value="Nome completo"
             />
             <input
-              autocomplete="off"
-              placeholder="Matrícula"
-              type="text"
+              name="matricula"
+              value="Matrícula"
             />
             <input
-              autocomplete="off"
-              placeholder="E-mail"
+              name="email"
               type="email"
+              value="E-mail"
             />
             <input
-              autocomplete="off"
-              placeholder="Senha"
+              name="senha"
               type="password"
+              value="Senha"
             />
             <input
-              autocomplete="off"
-              placeholder="Telefone"
-              type="text"
+              name="telefone"
+              value="Telefone"
             />
             <button
               type="submit"
