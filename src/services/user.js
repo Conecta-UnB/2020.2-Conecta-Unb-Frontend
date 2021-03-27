@@ -22,12 +22,25 @@ export async function createUser(Host, user) {
     return error;
   }
 }
-export async function getUser(Host, matricula) {
-  const response = await fetch(`${Host}/api/user/${matricula}`);
+
+export async function login(Host, user) {
   try {
-    const data = await response.json;
-    return data.data.user;
+    const response = await fetch(`${Host}/api/user/login`, {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email: user.email,
+        senha: user.senha,
+      }),
+    });
+    const data = await response.json();
+    console.log('Success: ', data);
+    return data;
   } catch (error) {
+    console.log('error ', error);
     return error;
   }
 }

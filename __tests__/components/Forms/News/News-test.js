@@ -1,10 +1,10 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import SignUpForm from '../../src/components/Forms/SignUp';
+import NewsForms from '../../../../src/components/Forms/News';
 
 describe('testando loginforms', () => {
   test('deve ser igual a snapshot', () => {
-    const { asFragment } = render(<SignUpForm />);
-    expect(asFragment(<SignUpForm />)).toMatchSnapshot();
+    const { asFragment } = render(<NewsForms />);
+    expect(asFragment(<NewsForms />)).toMatchSnapshot();
   });
 });

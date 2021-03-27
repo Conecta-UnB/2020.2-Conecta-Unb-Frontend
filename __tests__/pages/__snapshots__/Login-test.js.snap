@@ -16,21 +16,25 @@ exports[`testando loginforms deve ser igual a snapshot 1`] = `
           src="[object Object]"
         />
       </div>
-      <form>
+      <form
+        action="#"
+      >
         <label>
           E-mail:
+          <input
+            name="email"
+            type="email"
+            value=""
+          />
         </label>
-        <input
-          autocomplete="off"
-          type="email"
-        />
         <label>
           Senha:
+          <input
+            name="senha"
+            type="password"
+            value=""
+          />
         </label>
-        <input
-          autocomplete="off"
-          type="password"
-        />
         <button
           type="submit"
         >
