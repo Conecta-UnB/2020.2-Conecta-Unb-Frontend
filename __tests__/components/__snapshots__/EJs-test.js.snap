@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testando EJsForms deve ser igual a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="containerEJsForm"
+  >
+    <div>
+      <form>
+        <input
+          autocomplete="off"
+          placeholder="Nome da EJ"
+          type="text"
+        />
+        <input
+          autocomplete="off"
+          placeholder="Título"
+          type="text"
+        />
+        <textarea
+          placeholder="Conteúdo"
+        />
+        <button
+          type="submit"
+        >
+          Postar
+        </button>
+      </form>
+    </div>
+  </div>
+</DocumentFragment>
+`;

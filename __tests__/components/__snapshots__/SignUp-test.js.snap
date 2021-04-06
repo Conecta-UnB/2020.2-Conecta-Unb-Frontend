@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testando loginforms deve ser igual a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="containerSignUpForm"
+  >
+    <form
+      action="#"
+    >
+      <input
+        name="nome"
+        value="Nome completo"
+      />
+      <input
+        name="matricula"
+        value="Matrícula"
+      />
+      <input
+        name="email"
+        type="email"
+        value="E-mail"
+      />
+      <input
+        name="senha"
+        type="password"
+        value="Senha"
+      />
+      <input
+        name="telefone"
+        value="Telefone"
+      />
+      <button
+        type="submit"
+      >
+        Cadastre-se
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,36 @@
+.containerSignUpForm {
+  width: 90%;
+}
+
+.containerSignUpForm form{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerSignUpForm input{
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 24px;
+  border-color: #018B44;
+  color: #018B44;
+  margin-top: 3%;
+  padding: 1%;
+}
+
+.containerSignUpForm button{
+  margin-top: 3%;
+  padding: 1%;
+  background: #018B44;
+  border: none;
+  color: #ffff;
+  width: 25%;
+}
+
+.errorField {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #c50404;
+}
