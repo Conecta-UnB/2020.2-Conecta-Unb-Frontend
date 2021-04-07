@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testando loginforms deve ser igual a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="containerForumForm"
+  >
+    <div>
+      <form>
+        <input
+          autocomplete="off"
+          placeholder="Assunto"
+          type="text"
+        />
+        <input
+          autocomplete="off"
+          placeholder="Título"
+          type="text"
+        />
+        <textarea
+          placeholder="Resumo"
+        />
+        <button
+          type="submit"
+        >
+          Postar
+        </button>
+      </form>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testando loginforms deve ser igual a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="componentHeader"
+  >
+    <div
+      id="pages"
+    >
+      <div
+        id="ConectaUnb"
+      >
+        ConectaUnB
+      </div>
+      <a
+        href="none"
+      >
+        Home
+      </a>
+      <a
+        href="none"
+      >
+        Notícias
+      </a>
+      <a
+        href="none"
+      >
+        Eventos
+      </a>
+      <a
+        href="none"
+      >
+        EJs
+      </a>
+      <a
+        href="none"
+      >
+        Fórum
+      </a>
+      <a
+        class="headerPages"
+        href="none"
+      >
+        Perfil
+      </a>
+    </div>
+    <div
+      id="img"
+    >
+      <img
+        alt="unbFgaLogoImage"
+        src="[object Object]"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
