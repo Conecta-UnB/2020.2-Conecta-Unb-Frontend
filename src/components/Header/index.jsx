@@ -1,20 +1,30 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
+
+import { NewsContext } from '../../contexts/news';
+
 import './styles.css';
 import unbFgaLogo from '../../assets/unbFgaLogo.jpeg';
 
 export default function Header() {
+  const { getAllNews } = useContext(NewsContext);
   return (
     <div className="componentHeader">
       <div id="pages">
         <div id="ConectaUnb">
           ConectaUnB
         </div>
-        <a href="none">
+        <Link to="/">
           Home
-        </a>
-        <a href="none">
+        </Link>
+        <Link
+          onClick={async () => {
+            await getAllNews();
+          }}
+          to="/news"
+        >
           Notícias
-        </a>
+        </Link>
         <a href="none">
           Eventos
         </a>

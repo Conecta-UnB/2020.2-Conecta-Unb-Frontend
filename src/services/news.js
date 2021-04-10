@@ -23,18 +23,14 @@ export async function createNews(Host, news, matricula) {
   }
 }
 
-export async function login(Host, user) {
+export async function getAllNews(Host) {
   try {
-    const response = await fetch(`${Host}/api/user/login`, {
-      method: 'POST',
+    const response = await fetch(`${Host}/api/news`, {
+      method: 'GET',
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({
-        email: user.email,
-        senha: user.senha,
-      }),
     });
     const data = await response.json();
     console.log('Success: ', data);

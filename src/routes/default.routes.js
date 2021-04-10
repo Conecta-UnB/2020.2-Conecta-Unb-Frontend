@@ -5,6 +5,7 @@ import Home from '../pages/Home';
 import Login from '../pages/Login';
 import SignUp from '../pages/SignUp';
 import CreateNews from '../pages/CreateNews';
+import ShowNews from '../pages/ShowNews';
 
 const DefaultRoutes = () => (
   <BrowserRouter>
@@ -14,6 +15,7 @@ const DefaultRoutes = () => (
       <Route exact path="/login" component={Login} />
       <Route exact path="/signup" component={SignUp} />
       <Route exact path="/create-news" component={CreateNews} />
+      <Route exact path="/news" component={ShowNews} />
     </Switch>
   </BrowserRouter>
 );
