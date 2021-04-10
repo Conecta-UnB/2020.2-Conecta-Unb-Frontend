@@ -1,15 +1,17 @@
-/* eslint-disable react/button-has-type */
-/* eslint-disable jsx-a11y/label-has-associated-control */
+/* eslint-disable react/prop-types */
 import React, { useContext } from 'react';
+import { withRouter } from 'react-router-dom';
 import {
   Formik, Form, Field, ErrorMessage,
 } from 'formik';
-import { initialValues, SignupSchema, handleSubmit } from './formsSettings';
+
 import { UserContext } from '../../../contexts/user';
 import logo from '../../../assets/logo.jpeg';
+
+import { initialValues, SignupSchema, handleSubmit } from './formsSettings';
 import './styles.css';
 
-export default function LoginForm() {
+function LoginForm({ history }) {
   const { login } = useContext(UserContext);
 
   return (
@@ -20,19 +22,19 @@ export default function LoginForm() {
       <Formik
         initialValues={initialValues}
         onSubmit={(values, { setSubmitting }) => {
-          handleSubmit(values, setSubmitting, login);
+          handleSubmit(values, setSubmitting, login, history);
         }}
         validationSchema={SignupSchema}
       >
         {({ isSubmitting }) => (
           <Form>
-            <label>
+            <label htmlFor="email">
               E-mail:
               <Field type="email" name="email" />
               <ErrorMessage name="nome" component="div" className="errorField" />
             </label>
 
-            <label>
+            <label htmlFor="senha">
               Senha:
               <Field type="password" name="senha" />
               <ErrorMessage name="nome" component="div" className="errorField" />
@@ -45,3 +47,5 @@ export default function LoginForm() {
     </div>
   );
 }
+
+export default withRouter(LoginForm);
