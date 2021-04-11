@@ -6,9 +6,9 @@ import * as formSettings from '../../../../src/components/Forms/SignUp/formsSett
 import { UserContext } from '../../../../src/contexts/user';
 
 describe('testing loginforms', () => {
-  test('deve ser igual a snapshot', () => {
-    const { asFragment } = render(<SignUpForm />);
-    expect(asFragment(<SignUpForm />)).toMatchSnapshot();
+  test('must match snapshot', () => {
+    const tree = render(<SignUpForm />);
+    expect(tree).toMatchSnapshot();
   });
 
   test('test if the form works', async () => {

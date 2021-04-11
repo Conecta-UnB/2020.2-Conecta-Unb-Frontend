@@ -17,6 +17,8 @@
 
 .News {
   flex: 0 1 350px;
+  text-decoration: none;
+  color: black;
 }
 
 .NewsTitle {

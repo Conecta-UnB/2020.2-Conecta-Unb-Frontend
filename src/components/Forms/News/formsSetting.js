@@ -1,11 +1,10 @@
 import * as Yup from 'yup';
 
 export const initialValues = {
-  nome: '',
-  matricula: '',
-  email: '',
-  senha: '',
-  telefone: '',
+  titulo: '',
+  autor: '',
+  imagem: '',
+  conteudo: '',
 };
 
 export const SignupSchema = Yup.object().shape({

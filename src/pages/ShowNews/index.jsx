@@ -1,9 +1,10 @@
 import React, { useContext, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { NewsContext } from '../../contexts/news';
 import './styles.css';
 
 export default function ShowNews() {
-  const { allNews } = useContext(NewsContext);
+  const { allNews, setNewsDetails } = useContext(NewsContext);
   useEffect(() => {
     console.log(allNews);
   }, [allNews]);
@@ -11,10 +12,16 @@ export default function ShowNews() {
     <div className="NewsPage">
       <div className="NewsContainer">
         {allNews && allNews.map((item) => (
-          <div className="News">
+          <Link
+            to="/news-details"
+            className="News"
+            onClick={async () => {
+              await setNewsDetails(item);
+            }}
+          >
             <div className="NewsImage">{item.imagem}</div>
             <div className="NewsTitle">{item.titulo}</div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

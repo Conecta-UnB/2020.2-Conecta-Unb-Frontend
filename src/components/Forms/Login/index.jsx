@@ -30,14 +30,14 @@ function LoginForm({ history }) {
           <Form>
             <label htmlFor="email">
               E-mail:
-              <Field type="email" name="email" />
-              <ErrorMessage name="nome" component="div" className="errorField" />
+              <Field type="email" name="email" id="email" />
+              <ErrorMessage name="email" component="div" className="errorField" />
             </label>
 
             <label htmlFor="senha">
               Senha:
-              <Field type="password" name="senha" />
-              <ErrorMessage name="nome" component="div" className="errorField" />
+              <Field type="password" name="senha" id="senha" />
+              <ErrorMessage name="senha" component="div" className="errorField" />
             </label>
 
             <button type="submit" disabled={isSubmitting}>Entrar</button>
