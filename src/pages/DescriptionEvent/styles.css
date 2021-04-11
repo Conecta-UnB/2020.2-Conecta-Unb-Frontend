@@ -1,0 +1,12 @@
+.containerEvent {
+  margin-left: 40px;
+}
+
+.containerEvent h1 {
+  font-size: 45px;
+}
+
+.containerEvent p {
+  width: 95%;
+  margin-top: 20px;
+}

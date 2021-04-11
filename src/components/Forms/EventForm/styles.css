@@ -2,6 +2,10 @@
   width: 90%;
 }
 
+.containerEventsForms .div Field {
+  background-color: blue;
+}
+
 .containerEventsForms .eventsContent{
   display: flex;
   flex-direction: row;
