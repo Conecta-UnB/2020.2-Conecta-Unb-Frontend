@@ -1,0 +1,36 @@
+.NewsDetailsPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NewsDetails {
+  text-decoration: none;
+  color: black;
+  width: 80%;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.NewsDetailsTitle {
+  font-weight: 500;
+  font-size: 26px;
+  color: #018B44;
+}
+
+.NewsDetailsAuthor {
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.NewsDetailsImage {
+  width: 100%;
+  height: 500px;
+  /*
+  height: auto;
+  mudar para "auto" quando colocar imagens */
+  margin-top: 10px;
+  margin-bottom: 30px;
+  background-color: #C4C4C4;
+}

@@ -17,10 +17,11 @@ export const SignupSchema = Yup.object().shape({
 
 });
 
-export const handleSubmit = async (values, setSubmitting, login) => {
+export const handleSubmit = async (values, setSubmitting, login, history) => {
   setSubmitting(false);
   await login({
     email: values.email,
     senha: values.senha,
   });
+  history.push('/create-news');
 };

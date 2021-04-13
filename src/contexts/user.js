@@ -1,4 +1,4 @@
-import React, { createContext } from 'react';
+import React, { createContext, useState } from 'react';
 import * as UserService from '../services/user';
 
 export const UserContext = createContext({});
@@ -6,15 +6,25 @@ export const UserContext = createContext({});
 // eslint-disable-next-line react/prop-types
 export default function UserProvider({ children }) {
   // const [user, setUser] = useState({});
+  const [user, setUser] = useState({});
   const Host = 'http://localhost:3333';
-  async function createUser(user) {
-    console.log('ola', user);
-    const response = await UserService.createUser(Host, user);
+
+  async function createUser(userInfo) {
+    console.log('ola', userInfo);
+    const response = await UserService.createUser(Host, userInfo);
     return response;
   }
 
-  async function login(user) {
-    const response = await UserService.login(Host, user);
+  async function login(userInfo) {
+    const response = await UserService.login(Host, userInfo);
+    setUser({
+      nome: response.nome,
+      matricula: response.matricula,
+      email: response.email,
+      telefone: response.telefone,
+      role: response.role,
+    });
+    console.log(user);
     return response;
   }
 
@@ -23,6 +33,7 @@ export default function UserProvider({ children }) {
       value={{
         createUser,
         login,
+        user,
       }}
     >
       {children}

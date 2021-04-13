@@ -1,59 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`testando header should match snapshot 1`] = `
+exports[`testando loginforms deve ser igual a snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="componentHeader"
+        class="NewsDetailsPage"
       >
         <div
-          id="pages"
+          class="NewsDetails"
         >
           <div
-            id="ConectaUnb"
-          >
-            ConectaUnB
-          </div>
-          <a
-            href="/"
-          >
-            Home
-          </a>
-          <a
-            href="/news"
-          >
-            Notícias
-          </a>
-          <a
-            href="none"
-          >
-            Eventos
-          </a>
-          <a
-            href="none"
-          >
-            EJs
-          </a>
-          <a
-            href="none"
-          >
-            Fórum
-          </a>
-          <a
-            class="headerPages"
-            href="none"
-          >
-            Perfil
-          </a>
-        </div>
-        <div
-          id="img"
-        >
-          <img
-            alt="unbFgaLogoImage"
-            src="[object Object]"
+            class="NewsDetailsTitle"
+          />
+          <div
+            class="NewsDetailsAuthor"
+          />
+          <div
+            class="NewsDetailsImage"
+          />
+          <div
+            class="NewsDetailsContent"
           />
         </div>
       </div>
@@ -61,54 +29,22 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="componentHeader"
+      class="NewsDetailsPage"
     >
       <div
-        id="pages"
+        class="NewsDetails"
       >
         <div
-          id="ConectaUnb"
-        >
-          ConectaUnB
-        </div>
-        <a
-          href="/"
-        >
-          Home
-        </a>
-        <a
-          href="/news"
-        >
-          Notícias
-        </a>
-        <a
-          href="none"
-        >
-          Eventos
-        </a>
-        <a
-          href="none"
-        >
-          EJs
-        </a>
-        <a
-          href="none"
-        >
-          Fórum
-        </a>
-        <a
-          class="headerPages"
-          href="none"
-        >
-          Perfil
-        </a>
-      </div>
-      <div
-        id="img"
-      >
-        <img
-          alt="unbFgaLogoImage"
-          src="[object Object]"
+          class="NewsDetailsTitle"
+        />
+        <div
+          class="NewsDetailsAuthor"
+        />
+        <div
+          class="NewsDetailsImage"
+        />
+        <div
+          class="NewsDetailsContent"
         />
       </div>
     </div>

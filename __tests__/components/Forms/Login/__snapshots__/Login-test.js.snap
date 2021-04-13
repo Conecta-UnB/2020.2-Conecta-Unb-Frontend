@@ -1,43 +1,150 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`testing loginforms must match snapshot 1`] = `
-<DocumentFragment>
-  <div
-    class="containerLoginForm"
-  >
-    <div
-      class="imgContainer"
-    >
-      <img
-        alt="logoImage"
-        src="[object Object]"
-      />
-    </div>
-    <form
-      action="#"
-    >
-      <label>
-        E-mail:
-        <input
-          name="email"
-          type="email"
-          value=""
-        />
-      </label>
-      <label>
-        Senha:
-        <input
-          name="senha"
-          type="password"
-          value=""
-        />
-      </label>
-      <button
-        type="submit"
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="containerLoginForm"
       >
-        Entrar
-      </button>
-    </form>
-  </div>
-</DocumentFragment>
+        <div
+          class="imgContainer"
+        >
+          <img
+            alt="logoImage"
+            src="[object Object]"
+          />
+        </div>
+        <form
+          action="#"
+        >
+          <label
+            for="email"
+          >
+            E-mail:
+            <input
+              id="email"
+              name="email"
+              type="email"
+              value=""
+            />
+          </label>
+          <label
+            for="senha"
+          >
+            Senha:
+            <input
+              id="senha"
+              name="senha"
+              type="password"
+              value=""
+            />
+          </label>
+          <button
+            type="submit"
+          >
+            Entrar
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="containerLoginForm"
+    >
+      <div
+        class="imgContainer"
+      >
+        <img
+          alt="logoImage"
+          src="[object Object]"
+        />
+      </div>
+      <form
+        action="#"
+      >
+        <label
+          for="email"
+        >
+          E-mail:
+          <input
+            id="email"
+            name="email"
+            type="email"
+            value=""
+          />
+        </label>
+        <label
+          for="senha"
+        >
+          Senha:
+          <input
+            id="senha"
+            name="senha"
+            type="password"
+            value=""
+          />
+        </label>
+        <button
+          type="submit"
+        >
+          Entrar
+        </button>
+      </form>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
 `;

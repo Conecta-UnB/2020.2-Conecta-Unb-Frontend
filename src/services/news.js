@@ -1,20 +1,20 @@
-export async function createUser(Host, user) {
+export async function createNews(Host, news, matricula) {
+  console.log(news, matricula);
   try {
-    const response = await fetch(`${Host}/api/user/create`, {
+    const response = await fetch(`${Host}/api/news/create`, {
       method: 'POST',
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        nome: user.nome,
-        matricula: user.matricula,
-        email: user.email,
-        senha: user.senha,
-        telefone: user.telefone,
+        imagem: news.imagem,
+        autor: news.autor,
+        titulo: news.titulo,
+        conteudo: news.conteudo,
+        id_user: matricula,
       }),
     });
-    console.log('deu certo');
     const data = await response.json();
     console.log('Success: ', data);
     return data;
@@ -24,18 +24,14 @@ export async function createUser(Host, user) {
   }
 }
 
-export async function login(Host, user) {
+export async function getAllNews(Host) {
   try {
-    const response = await fetch(`${Host}/api/user/login`, {
-      method: 'POST',
+    const response = await fetch(`${Host}/api/news`, {
+      method: 'GET',
       headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({
-        email: user.email,
-        senha: user.senha,
-      }),
     });
     const data = await response.json();
     console.log('Success: ', data);
