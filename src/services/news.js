@@ -8,6 +8,7 @@ export async function createNews(Host, news, matricula) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
+        imagem: news.imagem,
         autor: news.autor,
         titulo: news.titulo,
         conteudo: news.conteudo,
