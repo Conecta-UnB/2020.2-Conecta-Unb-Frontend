@@ -1,8 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-
 import { NewsContext } from '../../contexts/news';
-
 import './styles.css';
 import unbFgaLogo from '../../assets/unbFgaLogo.jpeg';
 
@@ -35,7 +33,10 @@ export default function Header() {
           Fórum
         </a>
         <a href="none" className="headerPages">
-          Perfil
+          <Link to="/login">
+            Perfil
+          </Link>
+
         </a>
       </div>
       <div id="img">

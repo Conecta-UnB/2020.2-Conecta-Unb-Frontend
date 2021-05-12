@@ -5,7 +5,6 @@ import './styles.css';
 export default function ShowNews() {
   const { news } = useContext(NewsContext);
   useEffect(() => {
-    console.log('news-details: ', news);
   }, [news]);
   return (
     <div className="NewsDetailsPage">

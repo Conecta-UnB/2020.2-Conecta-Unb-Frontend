@@ -12,8 +12,6 @@ export default function NewsProvider({ children }) {
   const [news, setNews] = useState('');
 
   async function createNews(newsInfo) {
-    console.log('news info =', newsInfo, user);
-    console.log('user info =', user);
     const response = await NewsService.createNews(Host, newsInfo, user.matricula);
     return response;
   }
@@ -21,13 +19,11 @@ export default function NewsProvider({ children }) {
   async function getAllNews() {
     const response = await NewsService.getAllNews(Host);
     setAllNews(response.data.news);
-    console.log(response.data.news);
     return response;
   }
 
   async function setNewsDetails(newsDetail) {
     setNews(newsDetail);
-    console.log(newsDetail);
     return newsDetail;
   }
 

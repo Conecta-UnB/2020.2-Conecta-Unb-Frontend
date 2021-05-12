@@ -1,5 +1,4 @@
 export async function createNews(Host, news, matricula) {
-  console.log(news, matricula);
   try {
     const response = await fetch(`${Host}/api/news/create`, {
       method: 'POST',
@@ -16,10 +15,8 @@ export async function createNews(Host, news, matricula) {
       }),
     });
     const data = await response.json();
-    console.log('Success: ', data);
     return data;
   } catch (error) {
-    console.log('error ', error);
     return error;
   }
 }
@@ -34,10 +31,8 @@ export async function getAllNews(Host) {
       },
     });
     const data = await response.json();
-    console.log('Success: ', data);
     return data;
   } catch (error) {
-    console.log('error ', error);
     return error;
   }
 }

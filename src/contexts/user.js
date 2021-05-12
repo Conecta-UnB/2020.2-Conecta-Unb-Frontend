@@ -10,7 +10,6 @@ export default function UserProvider({ children }) {
   const Host = 'http://localhost:3333';
 
   async function createUser(userInfo) {
-    console.log('ola', userInfo);
     const response = await UserService.createUser(Host, userInfo);
     return response;
   }
@@ -24,7 +23,6 @@ export default function UserProvider({ children }) {
       telefone: response.telefone,
       role: response.role,
     });
-    console.log(user);
     return response;
   }
 
