@@ -4,9 +4,7 @@ import './styles.css';
 
 export default function ShowNews() {
   const { news } = useContext(NewsContext);
-  useEffect(() => {
-    console.log('news-details: ', news);
-  }, [news]);
+  useEffect(() => { }, [news]);
   return (
     <div className="NewsDetailsPage">
       <div className="NewsDetails">

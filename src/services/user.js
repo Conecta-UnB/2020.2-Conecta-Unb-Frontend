@@ -14,12 +14,9 @@ export async function createUser(Host, user) {
         telefone: user.telefone,
       }),
     });
-    console.log('deu certo');
     const data = await response.json();
-    console.log('Success: ', data);
     return data;
   } catch (error) {
-    console.log('error ', error);
     return error;
   }
 }
@@ -38,10 +35,8 @@ export async function login(Host, user) {
       }),
     });
     const data = await response.json();
-    console.log('Success: ', data);
     return data;
   } catch (error) {
-    console.log('error ', error);
     return error;
   }
 }

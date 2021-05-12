@@ -32,10 +32,15 @@ export default function Header() {
           EJs
         </a>
         <a href="none">
-          Fórum
+          <Link to="/forum">
+            Fórum
+          </Link>
         </a>
         <a href="none" className="headerPages">
-          Perfil
+          <Link to="/login">
+            Perfil
+          </Link>
+
         </a>
       </div>
       <div id="img">

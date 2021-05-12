@@ -1,0 +1,27 @@
+.StaticTopic {
+  background-color: #018B44;
+}
+
+.Title h1{
+  margin-left: 3%;
+  margin-top: 3%;
+  padding-bottom: 2%;
+  color: #018B44;
+}
+
+.StaticTopic h2 {
+  margin-left: 5%;
+  padding-top: 2%;
+  color: #ffffff;
+}
+
+.StaticTopic h3 {
+  margin-left: 5%;
+  padding-top: 1%;
+  color: #ffffff;
+}
+.StaticTopic h4 {
+  margin-left: 90%;
+  padding-bottom: 1%;
+  color: #ffffff;
+}
